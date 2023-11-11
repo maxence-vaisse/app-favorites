@@ -1,0 +1,616 @@
+/*Début de la page index.html*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #D5D5D5;
+}
+
+body::-webkit-scrollbar{
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track{
+    background-color: white;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: black;
+    border-radius: 15px;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    margin-left: 150px;
+}
+
+.logo-page-bereal{
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    margin-left: 150px;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #24FF00;
+}
+
+.navbar-link{
+    list-style: none;
+}
+
+.navbar-link li{
+    display: inline-block;
+    padding: 0px 100px;
+}
+
+li, a{
+    color: white;
+    text-decoration: none;
+    font-family: "Monomaniac One", sans-serif;
+    font-size: 24px;
+}
+
+.titre-principal{
+    padding-top: 60px;
+    color: #343434;
+    font-family: "Monomaniac One", sans-serif;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.introduction-page{
+    color: #343434;
+    font-family: "Monomaniac One", sans-serif;
+    text-align: center;
+    padding-bottom: 150px;
+    font-size: 20px;
+}
+
+.block-app{
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-waze-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: #00E0FF; 
+    width: 250px;
+    height: 250px;
+}
+
+.img-waze-block img{
+    width: 100px;
+    height: 100px;
+}
+
+.img-waze-block img:hover{
+    width: 120px;
+    height: 120px;
+    transition: all 0.3s ease 0s;
+}
+
+.text-block-app{ 
+    display: flex;
+    justify-content: space-between; 
+    text-align: center; 
+    margin-left: 120px; 
+    margin-right: 120px; 
+    color: #343434; 
+    font-family: "Monomaniac One", sans-serif;
+}
+
+.text-waze{
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    padding-top: 50px;
+}
+
+.img-fruitz-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: #FD537F;
+    width: 250px;
+    height: 250px;
+}
+
+.img-fruitz-block img{
+    width: 100px;
+    height: 100px;
+}
+
+.img-fruitz-block img:hover{
+    width: 120px;
+    height: 120px;
+    transition: all 0.3s ease 0s;
+}
+
+.text-fruitz{
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    padding-top: 50px;
+}
+
+.img-block-bereal{
+    border-radius: 20px;
+    background: #2d2d2d;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-block-bereal img{
+    width: 100px;
+    height: 100px;
+}
+
+.img-block-bereal img:hover{
+    width: 120px;
+    height: 120px;
+    transition: all 0.3s ease 0s;
+}
+
+.text-bereal{
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    padding-top: 50px;
+}
+
+.footer-lien{
+    border-radius: 30px 30px 0px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #24FF00;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.footer-lien-contact{ 
+    list-style: none;
+    color: white;
+    font-family: "Monomaniac One", sans-serif;
+}
+
+.footer-lien-applications{
+    list-style: none;
+    color: white;
+    font-family: "Monomaniac One", sans-serif;
+    margin-left: 50px;
+}
+
+.footer-lien-site{
+    list-style: none;
+    color: white;
+    font-family: "Monomaniac One", sans-serif; }
+
+.droits-reserve{
+    background-color: #24FF00;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    font-family: "Monomaniac One", sans-serif;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 1020px){
+
+    .block-app{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-block-app{
+        display: block;
+    }
+}
+
+/*Fin Page index */
+
+
+
+#header-waze{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #00E0FF;
+}
+
+.logo-page-waze{
+    width: 70px; height: 70px; cursor: pointer; margin-left: 150px;
+}
+
+.map-waze{
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+.all-article-waze{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.article-1-waze{
+    display: block;
+    text-align: center;
+    width: 350px;
+    height: 350px;
+    background-color: #00E0FF;
+    border-radius: 20px;
+    color: white;
+    margin-right: 60px;
+}
+
+.article-1-waze h2{
+    font-family: "Monomaniac One", sans-serif;
+    text-decoration: underline;
+}
+
+.paragraphe-1-waze{
+    font-family: "Monomaniac One", sans-serif;
+}
+
+.article-2-waze{
+    display: block;
+    text-align: center;
+    width: 350px;
+    height: 350px;
+    background-color: #00E0FF;
+    border-radius: 20px;
+    color: white;
+}
+
+.article-2-waze h2{
+    font-family: "Monomaniac One", sans-serif;
+    text-decoration: underline;
+}
+
+.paragraphe-2-waze{
+    font-family: "Monomaniac One", sans-serif;
+}
+
+.article-3-waze{
+    display: block;
+    text-align: center;
+    width: 350px;
+    height: 350px;
+    background-color: #00E0FF;
+    border-radius: 20px;
+    color: white;
+    margin-left: 60px;
+}
+
+.article-3-waze h2{
+    font-family: "Monomaniac One", sans-serif;
+    text-decoration: underline;
+}
+
+.paragraphe-3-waze{
+    font-family: "Monomaniac One", sans-serif;
+}
+
+.footer-lien-waze{
+    border-radius: 30px 30px 0px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #00E0FF;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.droits-reserve-waze{
+    background-color: #00E0FF;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    font-family: "Monomaniac One", sans-serif;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 1020px){
+    .all-article-waze{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+
+/*Fin Page Waze */
+
+
+
+#header-fruitz{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #FD537F;
+}
+
+.logo-page-fruitz{
+    width: 70px; height: 70px; cursor: pointer; margin-left: 150px;
+}
+
+.iphone-fruitz{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.iphone-fruitz img{
+    width: 378px;
+    height: 500px;
+}
+
+.iphone-fruitz img:hover{
+    width: 416px;
+    height: 550px;
+    transition: all 0.3s ease 0s;
+}
+
+.all-article-fruitz{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.article-1-fruitz{
+    display: block;
+    text-align: center;
+    width: 370px;
+    height: 370px;
+    background-color: #FD537F;
+    border-radius: 40px;
+    color: white;
+    transform: rotateY(-30deg) rotateX(15deg);
+}
+
+.article-1-fruitz h2{
+    font-family: "Monomaniac One", sans-serif;
+    text-decoration: underline;
+}
+
+.paragraphe-1-fruitz{
+    font-family: "Monomaniac One", sans-serif;
+}
+
+.article-2-fruitz{
+    display: block;
+    text-align: center;
+    width: 370px;
+    height: 370px;
+    background-color: #FD537F;
+    border-radius: 40px;
+    color: white;
+    margin-left: 60px;
+}
+
+.article-2-fruitz h2{
+    font-family: "Monomaniac One", sans-serif;
+    text-decoration: underline;
+}
+
+.paragraphe-2-fruitz{
+    font-family: "Monomaniac One", sans-serif;
+}
+
+.article-3-fruitz{
+    display: block;
+    text-align: center;
+    width: 370px;
+    height: 370px;
+    background-color: #FD537F;
+    border-radius: 40px;
+    color: white;
+    margin-left: 60px;
+    transform: rotateY(30deg) rotateX(15deg);
+}
+
+.article-3-fruitz h2{
+    font-family: "Monomaniac One", sans-serif;
+    text-decoration: underline;
+}
+
+.paragraphe-3-fruitz{
+    font-family: "Monomaniac One", sans-serif;
+}
+
+.footer-lien-fruitz{
+    border-radius: 30px 30px 0px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FD537F;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.droits-reserve-fruitz{
+    background-color: #FD537F;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    font-family: "Monomaniac One", sans-serif;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 1020px){
+    .all-article-fruitz{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+
+/*Fin Page Fruitz */
+
+
+
+#header-bereal{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #343434;
+}
+
+.logo-page-bereal{
+    width: 70px; height: 70px; cursor: pointer; margin-left: 150px;
+}
+
+.iphone-bereal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.iphone-bereal img{
+    width: 378px;
+    height: 500px;
+}
+
+.iphone-bereal img:hover{
+    width: 416px;
+    height: 550px;
+    transition: all 0.3s ease 0s;
+}
+
+.all-article-bereal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.article-1-bereal{
+    display: block;
+    text-align: center;
+    width: 370px;
+    height: 370px;
+    background-color: #343434;
+    border-radius: 40px;
+    color: white;
+}
+
+.article-1-bereal h2{
+    font-family: "Monomaniac One", sans-serif;
+    text-decoration: underline;
+}
+
+.paragraphe-1-bereal{
+    font-family: "Monomaniac One", sans-serif;
+}
+
+.article-2-bereal{
+    display: block;
+    text-align: center;
+    width: 370px;
+    height: 370px;
+    background-color: #343434;
+    border-radius: 40px;
+    color: white;
+    margin-left: 60px;
+}
+
+.article-2-bereal h2{
+    font-family: "Monomaniac One", sans-serif;
+    text-decoration: underline;
+}
+
+.paragraphe-2-bereal{
+    font-family: "Monomaniac One", sans-serif;
+}
+
+.article-3-bereal{
+    display: block;
+    text-align: center;
+    width: 370px;
+    height: 370px;
+    background-color: #343434;
+    border-radius: 40px;
+    color: white;
+    margin-left: 60px;
+}
+
+.article-3-bereal h2{
+    font-family: "Monomaniac One", sans-serif;
+    text-decoration: underline;
+}
+
+.footer-lien-bereal{
+    border-radius: 30px 30px 0px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #343434;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.droits-reserve-bereal{
+    background-color: #343434;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    font-family: "Monomaniac One", sans-serif;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 1020px){
+    .all-article-bereal{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+
+/*Fin Page BeReal */
